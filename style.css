@@ -58,10 +58,10 @@ body footer {
 }
 main {
 	background-color: rgba(1,0,77,0.11);
-	background-image: url(/%E4%B8%BB%E7%B7%9A/f0f1e2600e805e0da60b5cd60d617208.gif), -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,0,0,0.17) 100%);
-	background-image: url(/%E4%B8%BB%E7%B7%9A/f0f1e2600e805e0da60b5cd60d617208.gif), -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,0,0,0.17) 100%);
-	background-image: url(/%E4%B8%BB%E7%B7%9A/f0f1e2600e805e0da60b5cd60d617208.gif), -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,0,0,0.17) 100%);
-	background-image: url(/%E4%B8%BB%E7%B7%9A/f0f1e2600e805e0da60b5cd60d617208.gif), linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(255,0,0,0.17) 100%);
+	background-image: url(%E4%B8%BB%E7%B7%9A/f0f1e2600e805e0da60b5cd60d617208.gif), -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,0,0,0.17) 100%);
+	background-image: url(%E4%B8%BB%E7%B7%9A/f0f1e2600e805e0da60b5cd60d617208.gif), -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,0,0,0.17) 100%);
+	background-image: url(%E4%B8%BB%E7%B7%9A/f0f1e2600e805e0da60b5cd60d617208.gif), -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,0,0,0.17) 100%);
+	background-image: url(%E4%B8%BB%E7%B7%9A/f0f1e2600e805e0da60b5cd60d617208.gif), linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(255,0,0,0.17) 100%);
 }
 .ui-body {
 	width: 100%;
