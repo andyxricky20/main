@@ -4,11 +4,13 @@ html {
 }
 
 main {
-	background-color: rgba(255,206,252,0.22);
-	background-image: url(ch1/200w.gif);
+	background-color: rgba(0,0,0,0.82);
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
+	background-size: contain;
+	background-image: url(image-from-rawpixel-id-5921671-jpeg.jpg);
 }
+
 .ui-body {
 	width: 900px;
 	background-color: rgba(72,94,58,0.47);
@@ -19,7 +21,9 @@ main {
 	padding-right: auto;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 22px;
 }
+
 
 
 body div h1 {
@@ -42,6 +46,9 @@ body div h1 {
 }
 .ui-bar.ui-bar-a.ui-corner-all {
 	text-align: center;
-	font-weight: bolder;
+	font-weight: bold;
 	padding-left: 0px;
+	background-color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+	font-size: 27px;
 }
