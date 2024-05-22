@@ -5,18 +5,25 @@
 <title>main</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="js/parallaxie.min.js"></script> 	
+<script src="js/jquery.min.js"></script> 
+<script src="js/parallaxie.min.js"></script> 
+<script src="js/wow.min.js"></script>
+<link rel="stylesheet" href="css/animate.css">
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
+	<div data-role="header" data-position="fixed">
+	<h3 data-role="button"><a href="#top" target="_self" >回頂部</a></h3>
+</div>
 <div data-role="toolbar" data-type="header" style="overflow:hidden;">
 		
 <h1 id="top" class="box1">冠軍之路</h1>
 		<a href="https://andyxricky20.github.io/firstpage/" target="_self" class="ui-button-right" data-icon="ui-icon-gear">回首頁</a>
-    <div data-role="navbar" data-maxbutton="4">
+    <div data-role="navbar" data-grid="d">
     <ul>
+		<li><a href="#0" target="_self">新手向介紹</a></li>
         <li><a href="#1" target="_self" class="ui-button-active">圓模道館</a></li>
         <li><a href="#2" target="_self">深缽道館</a></li>
         <li><a href="#3" target="_self">釀光道館</a></li>
@@ -33,15 +40,19 @@
 	
 	
 <main>  
-	<p>.</p><p>.</p>
-	<h3 id="1" class="ui-bar ui-bar-a ui-corner-all">冠軍之路-圓模道館</h3>
-<div class="ui-body">
-    <p>在自己家中通過樓梯來到一樓。
+
+  <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+		<div data-role="collapsible">
+	<h3 id="0" class="ui-bar ui-bar-a ui-corner-all">新手向介紹</h3>
+	<div class="heroimg">
+	<div class="scale01">
+			<p><iframe width="880" height="495" src="https://www.youtube.com/embed/dGPvLzHr0LU?si=k_lBKI1zIM1o5xBN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			在自己家中通過樓梯來到一樓。
 
 
 
 來到一樓後向左走前往廚房和媽媽交談。
-      <img src="ch1/1-1.jpg" width="900" height="504" alt=""/>
+      <img src="ch1/1-1.jpg" width="900" height="504" alt=""/ >
     交談完畢後來到樓梯前的大門處見到了我們即將入學的橘子學院的校長，隨後需要回到樓上的房間做好入學準備。
       
       
@@ -50,22 +61,25 @@
       
       
       
-      跟隨校長來到屋外後，我們可以從三隻寶可夢中挑選一隻作為我們的夥伴。三隻寶可夢分別為<p>新葉喵 <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
-<div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
-  <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
-</div><p>呆火鱷 <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
-<div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
-  <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
-</div><p>潤水鴨<a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
-<div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
-  <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
+      跟隨校長來到屋外後，我們可以從三隻寶可夢中挑選一隻作為我們的夥伴。三隻寶可夢分別為
+		<p>新葉喵 <a href="#popupInfo1" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
+<div data-role="popup" id="popupInfo1" class="ui-content" data-theme="a" style="max-width:350px;">
+  <p> <strong>速度值较高的新叶喵</strong>最初就具有很高的速度值，最终进化形态速度值能达到123，更有机会发动先制攻击。先手使用属性一致的太晶招式并攻击克制属性的话，能够在第一招就造成大量伤害，在道馆战和BOSS战中的表现非常值得期待。其梦特（隐藏特性）【变换自如】可以根据所使用的招式来改变自身属性，考虑到这一点可以让新叶喵多学习一些其他属性的招式。</p>
+</div>
+		<p>呆火鱷 <a href="#popupInfo2" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
+<div data-role="popup" id="popupInfo2" class="ui-content" data-theme="a" style="max-width:350px;">
+  <p> <strong>耐打的呆火鳄</strong> 与其它两位御三家相比，呆火鳄的速度相对较低，但HP值和防御值相对较高，因此在应对物理攻击宝可梦时它的耐打能力很高。其新招式可以提高特攻，在宝主战、太晶团体战中相对更加有效。</p>
+</div>
+		<p>潤水鴨<a href="#popupInfo3" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
+<div data-role="popup" id="popupInfo3" class="ui-content" data-theme="a" style="max-width:350px;">
+  <p><strong>主线推荐选润水鸭。</strong> 润水鸭的最终进化形态属性为格斗和水，非常适合应对道馆主、BOSS战以及宝主宝可梦，并且最终进化形态有较高的攻击值，速度值也不错，推荐给想要高效推主线的玩家。能够提升速度的专属招式也非常实用，在排位战中可能会发挥出意想不到的作用</p>
 </div>。
       
       <img src="ch1/1-2.jpg" width="900" height="504" alt=""/>
       
-      隨後從媽媽那裡獲得重要道具<p>【手機洛托姆】<a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
-<div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
-  <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
+      隨後從媽媽那裡獲得重要道具<p>【手機洛托姆】<a href="#popupInfo4" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
+<div data-role="popup" id="popupInfo4" class="ui-content" data-theme="a" style="max-width:350px;">
+  <p>是一種擁有寶可夢圖鑑等強大功能的手機，首次出現於《劍／盾》，裡面住著可以進入各種電器的寶可夢洛托姆。除了寶可夢圖鑑外，把牠安裝在自行車上，玩家不但能在陸地上快速奔馳，還能夠在水上移動。</p>
 </div>後，先帶著三隻寶可夢四處逛逛。
       
       <img src="ch1/1-3.jpg" width="900" height="504" alt=""/>
@@ -150,9 +164,9 @@
       
       
       在塔下我們見到了奧琳博士的兒子派帕，通過他我們得知神秘的寶可夢叫做
-	<p>故勒頓<a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
-<div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
-  <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
+	<p>故勒頓<a href="#popupInfo5" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
+<div data-role="popup" id="popupInfo5" class="ui-content" data-theme="a" style="max-width:350px;">
+  <p>故勒頓似乎就是古老的探險記所提到的翼大王，據記載，它曾用拳頭擊裂大地。雖然外觀與摩托蜥相似，但它卻比摩托蜥更頑強凶暴。有關它的生態等資訊一切未明，故勒頓這個名字是由發現它的博士命名而來。故勒頓有無可撼動的強者意識，它自覺擁有出類拔萃的強大實力，無論面對怎樣的對手，都能表現得毫無畏懼。雖然戒備著人類，但它性情多變且好奇心旺盛，有時也會主動來嬉鬧。當它處於完全形態時，能以壓倒性的力量碾壓對手。它能以強大的腳力蹬地，跳躍到20米以上的高度，利用下落速度和自身體重的相乘效果使出極具破壞力的踢擊或撞擊。[</p>
 </div>。
 		
       <img src="ch1/1-23.jpg" width="900" height="504" alt=""/>
@@ -184,9 +198,9 @@
       
       
       當我們來到桌台市大門前時，妮莫會再次邀請我們進行寶可夢對戰。在此次對戰中我們會被妮莫用名為
-	<p>【太晶化】<a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
-<div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
-  <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
+	<p>【太晶化】<a href="#popupInfo6" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
+<div data-role="popup" id="popupInfo6" class="ui-content" data-theme="a" style="max-width:350px;">
+  <p>寶可夢需要太晶珠才能太晶化。太晶珠是只有帕底亞地區一部分受到認可的寶可夢訓練家才能擁有的特殊道具。</p>
 </div>的能力打敗。
       
      
@@ -215,9 +229,9 @@
  <img src="ch1/1-34.jpg" width="900" height="504" alt=""/>
 
 
-在食堂中見到派帕，得知他的夢想是做出傳說中的料理，而秘傳調味料則由名為<p>【寶主】<a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
+在食堂中見到派帕，得知他的夢想是做出傳說中的料理，而秘傳調味料則由名為<p>【寶主】<a href="#popupInfo7" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
 <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
-  <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
+  <p>是帕底亞地區特有的巨大寶可夢。200年前第零區探險隊在第零區發現一種奇妙的植物，稱為秘傳調味料。他們把這種第零區特有的植物種植在帕底亞各處，但周圍的野生寶可夢吃下了未成長完全的秘傳調味料，變得異常巨大，被稱為寶主寶可夢。</p>
 </div>的寶可夢守護，因此他需要我們説明他擊敗寶主收集調味料。
 
 
@@ -246,6 +260,33 @@
 
 在將寶可夢道館的位置標註在地圖上後，主線【冠軍之路】正式開啟
 	<img src="ch1/1-38.jpg" width="900" height="504" alt=""/>
+			
+				
+				
+				
+				</p>
+	</div>
+			 <div class="scale2">近期熱門遊戲攻略
+			   <div class="gamepic">
+				   <a href="https://www.entertainment14.net/blog/post/110966642-%e6%9f%8f%e5%be%b7%e4%b9%8b%e9%96%80-3-baldurs-gate-3-%e6%94%bb%e7%95%a5%e5%8c%af%e9%9b%86" target="new"><img src="gamepic/gate.jpg" width="160" height="240" alt=""/></a>
+				   <a href="https://www.entertainment14.net/blog/post/110989540-%e8%b6%85%e7%b4%9a%e7%91%aa%e5%88%a9%e6%ad%90%e5%85%84%e5%bc%9f-%e9%a9%9a%e5%a5%87-%e6%94%bb%e7%95%a5%e5%8c%af%e9%9b%86" target="new"><img src="gamepic/mario.jpg" width="160" height="224" alt=""/></a>
+	             <a href="https://www.entertainment14.net/blog/post/110989531-%e6%bc%ab%e5%a8%81%e8%9c%98%e8%9b%9b%e4%ba%ba-2-marvels-spiderman-2-%e6%94%bb%e7%95%a5%e5%8c%af%e9%9b%86" target="new"><img src="gamepic/spiderman.jpg" width="160" height="240" alt=""/></a> 
+			     <a href="https://www.entertainment14.net/blog/post/110986388-%e8%96%a9%e7%88%be%e9%81%94%e5%82%b3%e8%aa%aa-%e7%8e%8b%e5%9c%8b%e4%b9%8b%e6%b7%9a-%e6%94%bb%e7%95%a5%e5%8c%af%e9%9b%86" target="new"><img src="gamepic/zelda.jpeg" width="160" height="230" alt=""/></a>
+			   </div>
+          </div>
+	</div>
+	</div>
+	</div>
+	
+	
+	
+	
+  <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+		<div data-role="collapsible">
+	<h3 id="1" class="ui-bar ui-bar-a ui-corner-all">冠軍之路-圓模道館</h3>
+<div class="heroimg">
+	<div class="scale01">
+    <p>
 	首先挑戰的是級別最低的圓模道館。
 
 圓模道館位於西第1區和南第6區之間的圓模鎮中，該道館的館主為訓練場蟲屬性寶可夢的訓練師阿楓。
@@ -304,8 +345,18 @@
 <img src="ch1/1-46.jpg" width="900" height="504" alt=""/>
 </p>
 </div>
+		</div>
+	</div>
+	</div>
+	
+	
+	
+	
+  <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+		<div data-role="collapsible">
 	  <h3 id="2" class="ui-bar ui-bar-a ui-corner-all">冠軍之路-深缽道館</h3>
-<div class="ui-body">
+<div class="heroimg">
+	<div class="scale01">
     <p>接下來我們需要前往位於深缽鎮，挑戰位於此處的草道館館主。
 
 <img src="ch2/2-1.jpg" width="900" height="504" alt=""/>
@@ -343,8 +394,18 @@
 
 </p>
 </div>
+		</div>	
+			</div>
+			</div>
+			
+			
+	
+	
+  <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+		<div data-role="collapsible">
 	  <h3 id="3" class="ui-bar ui-bar-a ui-corner-all">冠軍之路-釀光道館</h3>
-<div class="ui-body">
+<div class="heroimg">
+	<div class="scale01">
     <p>釀光道館位於東第2區的釀光市中，該道館館主為擅長訓練電屬性寶可夢的訓練師奇樹。
 
 建議使用地面屬性的寶可夢挑戰該道館。
@@ -411,8 +472,17 @@
 
 </p>
 </div>
+			</div>
+		</div>
+	</div>	
+	
+	
+			
+  <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+		<div data-role="collapsible">
 	  <h3 id="4" class="ui-bar ui-bar-a ui-corner-all">冠軍之路-玻瓶道館</h3>
-<div class="ui-body">
+<div class="heroimg">
+	<div class="scale01">
     <p>玻瓶道館位於西第2區的玻瓶市中，該道館的主人是擅長訓練水屬性寶可夢的海岱。建議使用電或草屬性寶可夢戰鬥。
 
 <img src="ch4/4-1.jpg" width="900" height="504" alt=""/>
@@ -464,8 +534,17 @@
 將海岱擊敗後獲得水道館徽章，此後捕捉40級以下的寶可夢將會有更高的成功率。
 	<img src="ch4/4-9.jpg" width="900" height="504" alt=""/></p>
 </div>
-	  <h3 id="5" class="ui-bar ui-bar-a ui-corner-all">第五道館</h3>
-<div class="ui-body">
+		</div>
+				</div>
+	</div>		
+	
+	
+			
+  <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+		<div data-role="collapsible">
+	  <h3 id="5" class="ui-bar ui-bar-a ui-corner-all">冠軍之路-錦匯道館</h3>
+<div class="heroimg">
+	<div class="scale01">
     <p>接下來我們需要前往西第3區挑戰訓練一般屬性的道館館主青木，挑戰該道館時建議使用格鬥系寶可夢。
 
 <img src="ch5/5-1.jpg" width="900" height="504" alt=""/>
@@ -516,8 +595,17 @@
 將青木擊敗後獲得一般道館徽章，此後捕捉45級以下的寶可夢會更加輕鬆。
 	<img src="ch5/5-10.jpg" width="900" height="504" alt=""/></p>
 </div>
+			</div>
+			</div>
+	</div>		
+	
+	
+			
+  <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+		<div data-role="collapsible">
 	  <h3 id="6" class="ui-bar ui-bar-a ui-corner-all">冠軍之路-冰櫃道館</h3>
-<div class="ui-body">
+<div class="heroimg">
+	<div class="scale01">
     <p>接下來我們需要前往位於霜抹山上的冰櫃道館，在此道館遭遇的其他對手等級為40級，道館館主的寶可夢等級為42級。
 
 <img src="ch6/6-1.jpg" width="900" height="504" alt=""/>
@@ -562,8 +650,16 @@
 將萊姆擊敗後會獲得幽靈道館徽章，之後50級以下的寶可夢捕獲成功率將會提高。
 	</p>
 </div>
+			</div>
+		</div>
+			</div>
+	
+	
+  <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+		<div data-role="collapsible">
 	  <h3 id="7" class="ui-bar ui-bar-a ui-corner-all">冠軍之路-焙固道館</h3>
-<div class="ui-body">
+<div class="heroimg">
+	<div class="scale01">
     <p>接下來前往焙固鎮挑戰道館館主莉普，莉普的寶可夢等級為45級，擅長訓練超能力屬性的寶可夢。建議使用蟲、幽靈和惡屬性的寶可夢進行對戰。
 
 <img src="ch7/7-1.jpg" width="900" height="504" alt=""/>
@@ -623,8 +719,16 @@
 擊敗莉普後我們獲得了超能力道館徽章，之後55級的寶可夢將會更加容易捕捉。
 	<img src="ch7/7-7.jpg" width="900" height="504" alt=""/></p>
 </div>
+			</div>
+			</div>
+			</div>
+			
+			
+  <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+		<div data-role="collapsible">
 	  <h3 id="8" class="ui-bar ui-bar-a ui-corner-all">冠軍之路-霜抹山道館</h3>
-<div class="ui-body">
+<div class="heroimg">
+	<div class="scale01">
     <p>接下來前往位於冰櫃道館旁邊的霜抹山道館，該道館中對手使用的寶可夢均有冰屬性，建議使用火、格鬥、岩石和鋼屬性的寶可夢進行對戰。
 <img src="ch8/8-1.jpg" width="900" height="504" alt=""/>
 
@@ -664,8 +768,15 @@
 將古魯夏擊敗後無論什麼等級的寶可夢都已進行捕捉了。
 	<img src="ch8/8-7.jpg" width="900" height="504" alt=""/></p>
 </div>
+			</div>
+			</div>
+			</div>
+			
+  <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+		<div data-role="collapsible">
 		  <h3 id="9" class="ui-bar ui-bar-a ui-corner-all">挑戰聯盟</h3>
-<div class="ui-body">
+<div class="heroimg">
+	<div class="scale01">
     <p>前往位於桌台市西北邊的寶可夢聯盟所在地。
 
       <img src="final/9-1.jpg" width="700" height="393" alt=""/> 
@@ -819,13 +930,19 @@
 
 至此冠軍之路就已經完成。</p>
 </div>
-	</main>
-<footer><a href="#top" target="_self" data-icon="ui-icon-arrow-u" data-role="button" data-icon-position="top">Top</a></footer>
+</div>
+</div>				
+</div>	
 	
-	<script>
-$('main').parallaxie({speed: 0.1, offset: -50,});
-</script> 
+	
+	
+	</main>
+<footer><a href="#top" target="_self" data-icon="ui-icon-arrow-u" data-role="button" data-icon-position="top" data-position="fixed">Top</a></footer>
+	
 
+<script>
+	new WOW().init();
+</script>
 	
 </body>
 </html>
